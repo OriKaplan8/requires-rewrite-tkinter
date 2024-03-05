@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "main_program.py", line 1102, in <module>
+  File "main_program.py", line 1097, in main
+  File "main_program.py", line 753, in __init__
+  File "main_program.py", line 387, in __init__
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 771, in __init__
+    res = uri_parser.parse_uri(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\uri_parser.py", line 558, in parse_uri
+    nodes = dns_resolver.get_hosts()
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\srv_resolver.py", line 131, in get_hosts
+    _, nodes = self._get_srv_response_and_hosts(True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\srv_resolver.py", line 114, in _get_srv_response_and_hosts
+    nodes = [
+            ^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\srv_resolver.py", line 115, in <listcomp>
+    (maybe_decode(res.target.to_text(omit_final_dot=True)), res.port) for res in results
+                  ^^^^^^^^^^
+AttributeError: 'GenericRdata' object has no attribute 'target'
