@@ -4,6 +4,7 @@ connection_string = "mongodb+srv://orik:Ori121322@cluster0.tyiy3mk.mongodb.net/?
 client = MongoClient(connection_string)
 db = client.require_rewrite
 
+#For checking if stuff exists
 def checkAnnotatorNameExists(annotatorName):
     collection = db.annotators
     query = {"username":annotatorName}
@@ -23,7 +24,40 @@ def getAnnotatorUserCode(annotatorName):
         response = collection.find_one(query)
         return response['usercode']
 
+#Commands to get other stuff from the Database
+def getAllAnnotatorsNames():
+    collection = db.annotators
+    annotatorNames = []
+    
+    documents = collection.find()
+    
+    for document in documents:
+        annotatorName = document.get("username")
+        if annotatorName:
+            annotatorNames.append(annotatorName)
+            
+    if (len(annotatorNames) == 0):
+        raise Exception("No annotators in collection or field 'username' doesnt exists") 
+            
+    return annotatorNames
 
+def getAllAnnotatorsCodes():
+    collection = db.annotators
+    annotatorCodes = []
+    
+    documents = collection.find()
+    
+    for document in documents:
+        annotatorCode = document.get("usercode")
+        if annotatorCode:
+            annotatorCodes.append(annotatorCode)
+            
+    if (len(annotatorCodes) == 0):
+        raise Exception("No annotators in collection or field 'username' doesnt exists") 
+            
+    return annotatorCodes
+
+#Commands to get annotations from the Database
 def getBatchByAnnotatorNameAndBatchNum(annotatorName, batchNum):
 
     if not checkAnnotatorNameExists(annotatorName):
@@ -62,6 +96,17 @@ def getAllBatchesByAnnotator(annotatorName):
         annotatorBatches =  list(response)
         return annotatorBatches
     
+def getAllBatchesByAnnotatorCode(annotatorCode):
+
+    collection = db.json_annotations
+
+    response = collection.find({ "usercode": annotatorCode})
+    if response == None:
+        raise Exception(f"0 Batches under the annotator {annotatorCode} were found")
+    else:
+        annotatorBatches =  list(response)
+        return annotatorBatches
+    
 def getAllBatchesByAnnotatorNameDataFrame(annotatorName):
 
     if not checkAnnotatorNameExists(annotatorName):
@@ -79,7 +124,39 @@ def getAllBatchesByAnnotatorNameDataFrame(annotatorName):
             BatchesDataframe = pd.concat([BatchesDataframe, jsonToDataframe(batch['json_string'])])
         return BatchesDataframe
 
-
+def getAllAnnotations():
+    annotatorCodes = getAllAnnotatorsCodes()
+    allAnnotatorsBatches = []
+    
+    for annotatorCode in annotatorCodes:
+        annotatorBatches = getAllBatchesByAnnotatorCode(annotatorCode)
+        if annotatorBatches:
+            allAnnotatorsBatches.extend(annotatorBatches)
+            
+    if (len(allAnnotatorsBatches) == 0):
+        raise Exception("There are no batches.")
+            
+    return allAnnotatorsBatches
+        
+def getAllAnnotationsDataframe():
+    annotatorCodes = getAllAnnotatorsCodes()
+    allAnnotatorsBatches = []
+    
+    for annotatorCode in annotatorCodes:
+        annotatorBatches = getAllBatchesByAnnotatorCode(annotatorCode)
+        if annotatorBatches:
+            allAnnotatorsBatches.extend(annotatorBatches)
+            
+    if (len(allAnnotatorsBatches) == 0):
+        raise Exception("There are no batches.")
+            
+    BatchesDataframe = pd.DataFrame()
+    for batch in allAnnotatorsBatches:
+        BatchesDataframe = pd.concat([BatchesDataframe, jsonToDataframe(batch['json_string'])])
+            
+    return BatchesDataframe
+        
+#Coverts a Json to a Dataframe
 def jsonToDataframe(json_string):
     rows = []
     
