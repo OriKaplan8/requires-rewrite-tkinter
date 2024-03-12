@@ -1,0 +1,246 @@
+{
+    "dialog_0": {
+        "dialog": [
+            {
+                "turn_num": 0,
+                "turn_id": "dialog_0_turn_0",
+                "original_question": "question_dialog_0_0_0",
+                "original_question_id": "question_id_0_0",
+                "answer": "answer_0"
+            },
+            {
+                "turn_num": 1,
+                "turn_id": "dialog_0_turn_1",
+                "original_question": "question_dialog_0_0_1",
+                "original_question_id": "question_id_0_1",
+                "answer": "answer_1"
+            },
+            {
+                "turn_num": 2,
+                "turn_id": "dialog_0_turn_2",
+                "original_question": "question_dialog_0_0_2",
+                "original_question_id": "question_id_0_2",
+                "answer": "answer_2"
+            },
+            {
+                "turn_num": 3,
+                "turn_id": "dialog_0_turn_3",
+                "original_question": "question_dialog_0_0_3",
+                "original_question_id": "question_id_0_3",
+                "answer": "answer_3"
+            },
+            {
+                "turn_num": 4,
+                "turn_id": "dialog_0_turn_4",
+                "original_question": "question_dialog_0_0_4",
+                "original_question_id": "question_id_0_4",
+                "answer": "answer_4"
+            },
+            {
+                "turn_num": 5,
+                "turn_id": "dialog_0_turn_5",
+                "original_question": "question_dialog_0_0_5",
+                "original_question_id": "question_id_0_5",
+                "answer": "answer_5"
+            },
+            {
+                "turn_num": 6,
+                "turn_id": "dialog_0_turn_6",
+                "original_question": "question_dialog_0_0_6",
+                "original_question_id": "question_id_0_6",
+                "answer": "answer_6"
+            },
+            {
+                "turn_num": 7,
+                "turn_id": "dialog_0_turn_7",
+                "original_question": "question_dialog_0_0_7",
+                "original_question_id": "question_id_0_7",
+                "answer": "answer_7"
+            },
+            {
+                "turn_num": 8,
+                "turn_id": "dialog_0_turn_8",
+                "original_question": "question_dialog_0_0_8",
+                "original_question_id": "question_id_0_8",
+                "answer": "answer_8"
+            },
+            {
+                "turn_num": 9,
+                "turn_id": "dialog_0_turn_9",
+                "original_question": "question_dialog_0_0_9",
+                "original_question_id": "question_id_0_9",
+                "answer": "answer_9"
+            }
+        ],
+        "annotator_name": null,
+        "annotations": [
+            {
+                "turn_num": 1,
+                "turn_id": "dialog_0_turn_1",
+                "requires rewrite": null
+            },
+            {
+                "turn_num": 2,
+                "turn_id": "dialog_0_turn_2",
+                "requires rewrite": null
+            },
+            {
+                "turn_num": 3,
+                "turn_id": "dialog_0_turn_3",
+                "requires rewrite": null
+            },
+            {
+                "turn_num": 4,
+                "turn_id": "dialog_0_turn_4",
+                "requires rewrite": null
+            },
+            {
+                "turn_num": 5,
+                "turn_id": "dialog_0_turn_5",
+                "requires rewrite": null
+            },
+            {
+                "turn_num": 6,
+                "turn_id": "dialog_0_turn_6",
+                "requires rewrite": null
+            },
+            {
+                "turn_num": 7,
+                "turn_id": "dialog_0_turn_7",
+                "requires rewrite": null
+            },
+            {
+                "turn_num": 8,
+                "turn_id": "dialog_0_turn_8",
+                "requires rewrite": null
+            },
+            {
+                "turn_num": 9,
+                "turn_id": "dialog_0_turn_9",
+                "requires rewrite": null
+            }
+        ]
+    },
+    "dialog_1": {
+        "dialog": [
+            {
+                "turn_num": 0,
+                "turn_id": "dialog_1_turn_0",
+                "original_question": "question_dialog_0_1_0",
+                "original_question_id": "question_id_1_0",
+                "answer": "answer_0"
+            },
+            {
+                "turn_num": 1,
+                "turn_id": "dialog_1_turn_1",
+                "original_question": "question_dialog_0_1_1",
+                "original_question_id": "question_id_1_1",
+                "answer": "answer_1"
+            },
+            {
+                "turn_num": 2,
+                "turn_id": "dialog_1_turn_2",
+                "original_question": "question_dialog_0_1_2",
+                "original_question_id": "question_id_1_2",
+                "answer": "answer_2"
+            },
+            {
+                "turn_num": 3,
+                "turn_id": "dialog_1_turn_3",
+                "original_question": "question_dialog_0_1_3",
+                "original_question_id": "question_id_1_3",
+                "answer": "answer_3"
+            },
+            {
+                "turn_num": 4,
+                "turn_id": "dialog_1_turn_4",
+                "original_question": "question_dialog_0_1_4",
+                "original_question_id": "question_id_1_4",
+                "answer": "answer_4"
+            },
+            {
+                "turn_num": 5,
+                "turn_id": "dialog_1_turn_5",
+                "original_question": "question_dialog_0_1_5",
+                "original_question_id": "question_id_1_5",
+                "answer": "answer_5"
+            },
+            {
+                "turn_num": 6,
+                "turn_id": "dialog_1_turn_6",
+                "original_question": "question_dialog_0_1_6",
+                "original_question_id": "question_id_1_6",
+                "answer": "answer_6"
+            },
+            {
+                "turn_num": 7,
+                "turn_id": "dialog_1_turn_7",
+                "original_question": "question_dialog_0_1_7",
+                "original_question_id": "question_id_1_7",
+                "answer": "answer_7"
+            },
+            {
+                "turn_num": 8,
+                "turn_id": "dialog_1_turn_8",
+                "original_question": "question_dialog_0_1_8",
+                "original_question_id": "question_id_1_8",
+                "answer": "answer_8"
+            },
+            {
+                "turn_num": 9,
+                "turn_id": "dialog_1_turn_9",
+                "original_question": "question_dialog_0_1_9",
+                "original_question_id": "question_id_1_9",
+                "answer": "answer_9"
+            }
+        ],
+        "annotator_name": null,
+        "annotations": [
+            {
+                "turn_num": 1,
+                "turn_id": "dialog_1_turn_1",
+                "requires rewrite": null
+            },
+            {
+                "turn_num": 2,
+                "turn_id": "dialog_1_turn_2",
+                "requires rewrite": null
+            },
+            {
+                "turn_num": 3,
+                "turn_id": "dialog_1_turn_3",
+                "requires rewrite": null
+            },
+            {
+                "turn_num": 4,
+                "turn_id": "dialog_1_turn_4",
+                "requires rewrite": null
+            },
+            {
+                "turn_num": 5,
+                "turn_id": "dialog_1_turn_5",
+                "requires rewrite": null
+            },
+            {
+                "turn_num": 6,
+                "turn_id": "dialog_1_turn_6",
+                "requires rewrite": null
+            },
+            {
+                "turn_num": 7,
+                "turn_id": "dialog_1_turn_7",
+                "requires rewrite": null
+            },
+            {
+                "turn_num": 8,
+                "turn_id": "dialog_1_turn_8",
+                "requires rewrite": null
+            },
+            {
+                "turn_num": 9,
+                "turn_id": "dialog_1_turn_9",
+                "requires rewrite": null
+            }
+        ]
+    }
+}
