@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "create-exe"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
