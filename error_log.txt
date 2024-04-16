@@ -1,17 +1,17 @@
 Traceback (most recent call last):
-  File "C:\Users\User\AppData\Local\Temp\ipykernel_58212\495858895.py", line 1128, in <module>
+  File "C:\Users\oriro\AppData\Local\Temp\ipykernel_20840\1473884096.py", line 1032, in <module>
     main()
-  File "C:\Users\User\AppData\Local\Temp\ipykernel_58212\495858895.py", line 1123, in main
+  File "C:\Users\oriro\AppData\Local\Temp\ipykernel_20840\1473884096.py", line 1027, in main
     app = JsonViewerApp(root)
           ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\User\AppData\Local\Temp\ipykernel_58212\495858895.py", line 805, in __init__
+  File "C:\Users\oriro\AppData\Local\Temp\ipykernel_20840\1473884096.py", line 709, in __init__
     self.progress = ProgressIndicator(top_panel_frame)
                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\User\AppData\Local\Temp\ipykernel_58212\495858895.py", line 282, in __init__
+  File "C:\Users\oriro\AppData\Local\Temp\ipykernel_20840\1473884096.py", line 282, in __init__
     self.current_dialog_label = tk.Label(position, text="")
                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "c:\Users\User\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3214, in __init__
+  File "c:\Users\oriro\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 3214, in __init__
     Widget.__init__(self, master, 'label', cnf, kw)
-  File "c:\Users\User\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
+  File "c:\Users\oriro\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 2628, in __init__
     self.tk.call(
 _tkinter.TclError: can't invoke "label" command: application has been destroyed
