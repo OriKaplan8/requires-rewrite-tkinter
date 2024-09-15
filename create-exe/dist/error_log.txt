@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "main_program.py", line 1102, in <module>
-  File "main_program.py", line 1097, in main
-  File "main_program.py", line 755, in __init__
-  File "main_program.py", line 281, in __init__
-  File "tkinter\__init__.py", line 3214, in __init__
-  File "tkinter\__init__.py", line 2628, in __init__
-_tkinter.TclError: can't invoke "label" command: application has been destroyed

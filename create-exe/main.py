@@ -811,7 +811,7 @@ class AnnotationApp:
             missing_fields.append('Requires-Rewrite')
 
         if self.enough_context.is_empty():
-            missing_fields.append('Requires-Rewrite')
+            missing_fields.append('Enough-Context')
        
         if missing_fields and self.fields_check:
             tk.messagebox.showwarning("Warning", "The following fields are missing: " + ", ".join(missing_fields) + ". Please fill them in before proceeding.")
@@ -1102,7 +1102,7 @@ class AnnotationApp:
             missing_fields.append('Requires-Rewrite')
 
         if self.enough_context.is_empty():
-            missing_fields.append('Requires-Rewrite')
+            missing_fields.append('Enough-Context')
        
         if missing_fields and self.fields_check:
             tk.messagebox.showwarning("Warning", "The following fields are missing: " + ", ".join(missing_fields) + ". Please fill them in before proceeding.")
